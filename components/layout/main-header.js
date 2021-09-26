@@ -17,7 +17,7 @@ const MainHeader = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             edge="start"
@@ -41,6 +41,7 @@ const MainHeader = () => {
           </Link>
         </Toolbar>
       </AppBar>
+      <Toolbar />
     </div>
   );
 };
