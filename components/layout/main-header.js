@@ -4,14 +4,17 @@ import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 
 import { makeStyles } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const MainHeader = () => {
   const classes = useStyles();
+  const matches = useMediaQuery("(min-width: 767px)");
 
   const { toggleSidebar } = useContext(GlobalContext);
 
@@ -19,26 +22,32 @@ const MainHeader = () => {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            onClick={() => toggleSidebar()}
-          >
-            <Image src="/logo.svg" alt="the food hub" width="40" height="40" />
+          <IconButton edge="start">
+            <Image src="/logo.svg" alt="the food hub" width="35" height="35" />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            THE FOOD HUB
+            The Food Hub
           </Typography>
-          <Link href="/">
-            <a className={classes.links}>
-              <Button>Home</Button>
-            </a>
-          </Link>
-          <Link href="/">
-            <a className={classes.links}>
-              <Button>About</Button>
-            </a>
-          </Link>
+          {matches ? (
+            <>
+              <Link href="/" passHref>
+                <Button>Home</Button>
+              </Link>
+              <Link href="/about" passHref>
+                <Button>About</Button>
+              </Link>
+            </>
+          ) : (
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+              onClick={() => toggleSidebar()}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
         </Toolbar>
       </AppBar>
       <Toolbar />
@@ -52,14 +61,9 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: "Open Sans Condensed, sans-serif",
+    fontFamily: "Amita, cursive",
     fontWeight: "bold",
     fontSize: "1.8rem",
-  },
-  links: {
-    "@media (max-width: 767px)": {
-      display: "none",
-    },
   },
 }));
 

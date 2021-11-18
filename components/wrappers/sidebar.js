@@ -7,7 +7,7 @@ const Sidebar = ({ children }) => {
 
   return (
     <SwipeableDrawer
-      anchor="left"
+      anchor="right"
       open={sidebarOpen}
       onClose={toggleSidebar}
       onOpen={toggleSidebar}

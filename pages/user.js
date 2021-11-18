@@ -7,8 +7,6 @@ const Page = () => {
   const classes = useStyles();
   const [user, loading, error] = useAuthState(auth);
 
-  console.log(auth?.currentUser?.getIdTokenResult() ?? "");
-
   const handleSignin = () => {
     signinWithGoogle();
     // .then((result) => {
