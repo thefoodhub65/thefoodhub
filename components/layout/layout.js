@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import MainFooter from "../footer/main-footer";
 
 import Footer from "./footer";
 import MainHeader from "./main-header";
@@ -9,7 +10,8 @@ const Layout = (props) => {
     <Fragment>
       <MainHeader />
       <UserSidebar />
-      <main style={{ minHeight: "90vh" }}>{props.children}</main>
+      <main>{props.children}</main>
+      <MainFooter />
       <Footer />
     </Fragment>
   );

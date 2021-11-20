@@ -25,7 +25,7 @@ const MainHeader = () => {
           <IconButton edge="start">
             <Image src="/logo.svg" alt="the food hub" width="35" height="35" />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h1" className={classes.title}>
             The Food Hub
           </Typography>
           {matches ? (
@@ -33,8 +33,14 @@ const MainHeader = () => {
               <Link href="/" passHref>
                 <Button>Home</Button>
               </Link>
-              <Link href="/about" passHref>
-                <Button>About</Button>
+              <Link href="/menu" passHref>
+                <Button>Our Menu</Button>
+              </Link>
+              <Link href="/tiffin" passHref>
+                <Button>Tiffin service</Button>
+              </Link>
+              <Link href="/contact" passHref>
+                <Button>Contact us</Button>
               </Link>
             </>
           ) : (
