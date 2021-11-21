@@ -10,12 +10,12 @@ const ContactForm = () => {
     <form
       className={classes.form}
       autoComplete="off"
-      name="contactForm"
-      method="post"
+      name="contact"
+      method="POST"
+      action="/success"
       data-netlify="true"
-      action="/contact?success=true"
     >
-      <input type="hidden" name="contactForm" value="contactForm" />
+      <input type="hidden" name="form-name" value="contact" />
       <div>
         <TextField
           required
