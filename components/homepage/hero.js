@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 const Hero = () => {
   const classes = useStyles();
+  const router = useRouter();
 
   return (
     <div className={classes.container}>
@@ -26,8 +28,10 @@ const Hero = () => {
           variant="contained"
           aria-label="contained primary button group"
         >
-          <Button color="primary">Our Menu</Button>
-          <Button>Order Tiffin</Button>
+          <Button onClick={() => router.push("/menu")} color="primary">
+            Our Menu
+          </Button>
+          <Button onClick={() => router.push("/tiffin")}>Order Tiffin</Button>
         </ButtonGroup>
       </div>
     </div>
