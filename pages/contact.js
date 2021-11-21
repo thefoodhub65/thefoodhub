@@ -10,7 +10,6 @@ export default function Contact() {
           name="description"
           content="Contact The Food Hub via email or phone."
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ContactPage />
     </div>

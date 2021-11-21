@@ -10,7 +10,6 @@ export default function Contact() {
           name="description"
           content="Tell us about your favourite dishes at The Food Hub!"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeedbackPage />
     </div>
