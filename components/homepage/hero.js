@@ -17,10 +17,10 @@ const Hero = () => {
         objectPosition="center"
       />
       <div className={classes.main}>
-        <h1 className={classes.header}>The Food Hub</h1>
-        <h2 className={`${classes.gap} ${classes.subheader}`}>
+        <Image src="/logo.svg" alt="The Food Hub" width="300" height="300" />
+        <h1 className={`${classes.gap} ${classes.subheader}`}>
           Satisfy your cravings...
-        </h2>
+        </h1>
         <ButtonGroup
           className={classes.gap}
           variant="contained"

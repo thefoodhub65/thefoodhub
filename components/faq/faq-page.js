@@ -24,9 +24,8 @@ const FaqPage = () => {
         <AccordionDetails>
           <Typography>
             You can order food from The food Hub via phone call or online
-            through Zomato. Just add the food item to favourites you want to
-            order and make the phone call to our restaurant on one of the phone
-            numbers.
+            through Zomato. Just choose the food item you want to order and make
+            the phone call to our restaurant on one of the phone numbers.
           </Typography>
         </AccordionDetails>
       </Accordion>
