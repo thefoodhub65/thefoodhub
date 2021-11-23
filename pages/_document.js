@@ -23,7 +23,7 @@ class MyDocument extends Document {
             content="The Food Hub | Satisfy your cravings by ordering the delicious meal or just order thali's via tiffin service."
           />
           <meta property="og:url" content="https://thefoodhub.netlify.app" />
-          <meta property="og:site_name" content="Sinha Education Point" />
+          <meta property="og:site_name" content="The Food Hub" />
         </Head>
         <body>
           <Main />
