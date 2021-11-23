@@ -6,7 +6,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
-const CategoryCard = ({ imgUrl, title, desp, loc }) => {
+const CategoryCard = ({ imgUrl, title, loc }) => {
   const classes = useStyles();
   const router = useRouter();
 

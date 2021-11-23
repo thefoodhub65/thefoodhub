@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/homepage/hero";
+import OurTeam from "../components/homepage/our-team";
 import PopularCategory from "../components/homepage/popular-category";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Hero />
       <PopularCategory />
+      <OurTeam />
     </div>
   );
 }

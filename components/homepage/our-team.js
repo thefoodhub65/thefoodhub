@@ -1,35 +1,24 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import CategoryCard from "./category-card";
+import TeamCard from "./team-card";
 
-const PopularCategory = () => {
+const OurTeam = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.header}>Most Popular Categories</h1>
+      <h1 className={classes.header}>Our Team</h1>
       <hr className={classes.divider} />
       <Grid className={classes.grid} container justifyContent="center">
         <Grid item className={classes.gridItem}>
-          <CategoryCard
-            imgUrl="/images/footer.jpg"
-            title="South Indian"
-            loc="/menu#southindian"
+          <TeamCard
+            imgUrl="/images/team/founder1.png"
+            name="Mr. "
+            desp="Founder"
           />
         </Grid>
         <Grid item className={classes.gridItem}>
-          <CategoryCard
-            imgUrl="/images/footer.jpg"
-            title="North Indian"
-            loc="/menu#northindian"
-          />
-        </Grid>
-        <Grid item className={classes.gridItem}>
-          <CategoryCard
-            imgUrl="/images/footer.jpg"
-            title="Chinese Cuisine"
-            loc="/menu#chinese"
-          />
+          <TeamCard imgUrl="/images/team/chef1.png" name="Mr. " desp="Chef" />
         </Grid>
       </Grid>
     </div>
@@ -66,4 +55,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default PopularCategory;
+export default OurTeam;

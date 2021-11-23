@@ -13,7 +13,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta
             name="keywords"
-            content="the food hub, tfh, restaurant, veg, non-veg, nonveg, paneer, chicken, tiffin service, rice, bread, biryani, chinese cuisine, south indian food, north indian food"
+            content="the food hub, tfh, restaurant, delhi, sarita vihar, veg, non-veg, nonveg, paneer, chicken, tiffin service, rice, bread, biryani, chinese cuisine, south indian food, north indian food"
           />
           <meta property="og:locale" content="en_GB" />
           <meta property="og:type" content="website" />
