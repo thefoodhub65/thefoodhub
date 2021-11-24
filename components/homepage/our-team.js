@@ -19,7 +19,7 @@ const OurTeam = () => {
         </Grid>
         <Grid item className={classes.gridItem}>
           <TeamCard
-            imgUrl="/images/team/founder2.png"
+            imgUrl="/images/team/founder2.jpg"
             name="Miss Sanjana"
             desp="Founder"
           />
