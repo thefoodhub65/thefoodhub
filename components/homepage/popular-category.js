@@ -27,8 +27,8 @@ const PopularCategory = () => {
         <Grid item className={classes.gridItem}>
           <CategoryCard
             imgUrl="/images/food/thali.png"
-            title="Chinese Cuisine"
-            loc="/menu#chinese"
+            title="Thali's"
+            loc="/menu#thali"
           />
         </Grid>
       </Grid>
