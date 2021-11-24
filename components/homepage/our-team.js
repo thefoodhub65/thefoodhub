@@ -19,6 +19,13 @@ const OurTeam = () => {
         </Grid>
         <Grid item className={classes.gridItem}>
           <TeamCard
+            imgUrl="/images/team/founder2.png"
+            name="Miss Sanjana"
+            desp="Founder"
+          />
+        </Grid>
+        <Grid item className={classes.gridItem}>
+          <TeamCard
             imgUrl="/images/team/chef1.png"
             name="Mr. Joginder"
             desp="Chef"
