@@ -31,6 +31,13 @@ const OurTeam = () => {
             desp="Chef"
           />
         </Grid>
+        <Grid item className={classes.gridItem}>
+          <TeamCard
+            imgUrl="/images/team/manage1.png"
+            name="Mr. Gautam Gupta"
+            desp="Managing Staff"
+          />
+        </Grid>
       </Grid>
     </div>
   );
