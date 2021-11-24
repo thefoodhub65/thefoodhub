@@ -12,21 +12,21 @@ const PopularCategory = () => {
       <Grid className={classes.grid} container justifyContent="center">
         <Grid item className={classes.gridItem}>
           <CategoryCard
-            imgUrl="/images/footer.jpg"
+            imgUrl="/images/food/south_indian.png"
             title="South Indian"
             loc="/menu#southindian"
           />
         </Grid>
         <Grid item className={classes.gridItem}>
           <CategoryCard
-            imgUrl="/images/footer.jpg"
+            imgUrl="/images/food/north_indian_non_veg.png"
             title="North Indian"
             loc="/menu#northindian"
           />
         </Grid>
         <Grid item className={classes.gridItem}>
           <CategoryCard
-            imgUrl="/images/footer.jpg"
+            imgUrl="/images/food/thali.png"
             title="Chinese Cuisine"
             loc="/menu#chinese"
           />

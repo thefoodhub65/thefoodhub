@@ -9,7 +9,7 @@ const FoodItem = ({ foodItem }) => {
   const prices = Object.entries(foodItem.price);
 
   return (
-    <Card className={classes.root} variant="outlined">
+    <Card variant="outlined">
       <CardContent className={classes.content}>
         <Typography className={classes.title} variant="h5" component="h2">
           {foodItem.name}
@@ -36,9 +36,6 @@ const FoodItem = ({ foodItem }) => {
 };
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 250,
-  },
   title: {
     fontFamily: "Poppins, sans-serif",
     color: theme.palette.primary.main,

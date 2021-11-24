@@ -13,12 +13,16 @@ const OurTeam = () => {
         <Grid item className={classes.gridItem}>
           <TeamCard
             imgUrl="/images/team/founder1.png"
-            name="Mr. "
+            name="Mr. Sonu"
             desp="Founder"
           />
         </Grid>
         <Grid item className={classes.gridItem}>
-          <TeamCard imgUrl="/images/team/chef1.png" name="Mr. " desp="Chef" />
+          <TeamCard
+            imgUrl="/images/team/chef1.png"
+            name="Mr. Joginder"
+            desp="Chef"
+          />
         </Grid>
       </Grid>
     </div>
@@ -49,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
   },
   gridItem: {
-    width: 340,
+    width: 250,
     margin: "15px",
     zIndex: "10",
   },

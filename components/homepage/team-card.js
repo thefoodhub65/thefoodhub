@@ -17,7 +17,6 @@ const TeamCard = ({ imgUrl, name, desp }) => {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 300,
     transition: "all 0.5s ease",
     borderRadius: "20px",
     boxShadow: "rgba(0, 0, 0, 0.60) 0px 4px 12px",
